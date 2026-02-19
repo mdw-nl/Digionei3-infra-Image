@@ -30,6 +30,7 @@ services:
     container_name: dicom-sorter
     environment:
       - PYTHONUNBUFFERED=1
+      - USE_RADIOMICS=${USE_RADIOMICS}
     ports:
       - "104:104"
       - "9000:9000"
